@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass";
+  background-color: #121417;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main {
+  margin: 0 1.2rem;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  background-image: linear-gradient(hsl(212, 20%, 17%), hsl(210, 21%, 11%));
+}
+
+.star-icon,
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: #2c333a;
+}
+
+.heading {
+  margin: 1.2rem 0 1rem;
+  font-size: 14px;
+}
+
+.text {
+  line-height: 1.5;
+  color: #909aa7;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  color: #909aa7;
+  margin-bottom: 1.5rem;
+}
+
+.rate {
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.rate:hover {
+  background-color: #7c8798;
+  color: white;
+}
+
+.rate-selected {
+  background-color: #e96100;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  border: none;
+  background-color: #fb7413;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #e6e1e1;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #e96100;
+}
+
+.center {
+  text-align: center;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  color: #fb7413;
+}
+
+.selected p {
+  background-color: #2c333a;
+  padding: 0.5rem 0.8rem;
+  border-radius: 2rem;
+  font-size: 14px;
+}
+
+@media (min-width: 420px) {
+  .main {
+    max-width: 385px;
+  }
+}
